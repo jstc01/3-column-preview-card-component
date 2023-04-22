@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+	color: hsl(0, 0%, 95%);
+}
+
+main {
+	max-width: 1000px;
+	margin: 32px;
+}
+
+section {
+	display: flex;
+}
+
+.sedan {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 0 0 10px;
+	padding: 45px;
+}
+
+.sedan button {
+	color: hsl(31, 77%, 52%);
+}
+
+.suv {
+	background-color: hsl(184, 100%, 22%);
+	padding: 45px;
+}
+
+.suv button {
+	color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 10px 10px 0;
+	padding: 45px;
+}
+
+.luxury button {
+	color: hsl(179, 100%, 13%);
+}
+
+h2 {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-size: 48px;
+	padding: 20px 0;
+}
+
+p {
+	letter-spacing: 1px;
+}
+
+button {
+	font-size: 18px;
+	width: 68%;
+	height: 50px;
+	margin-top: 80px;
+	border-radius: 40px;
+	border: none;
+	align-items: center;
+}
+
+button:hover {
+	background-color: transparent;
+	border: 1px solid white;
+	color: white;
+}
+
+@media (max-width: 425px) {
+	main {
+		min-width: 80%;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.sedan {
+		border-radius: 10px 10px 0 0;
+	}
+	.luxury {
+		border-radius: 0 0 10px 10px;
+	}
+	button {
+		margin-top: 20px;
+	}
+}
+
+.attribution {
+	margin-top: 3rem;
+	text-align: center;
+	color: #333;
+}
+
+.attribution a {
+	text-decoration: none;
+	font-size: 1.4rem;
+	color: hsl(217, 76%, 42%);
+}
